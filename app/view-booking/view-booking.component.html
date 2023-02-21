@@ -1,0 +1,17 @@
+<input type="text" #destinationAirport>
+<button (click)="getBooking(destinationAirport.value)">Load Booking</button>
+
+<div *ngFor="let b of allBooking">
+    <table>
+        <tr>
+            <td>{{b.name}}</td>
+            <td>{{b.mobileNumber}}</td>
+            <td>{{b.dateOfBooking}}</td>
+            <td>{{b.sourceAirport}}</td>
+            <td>{{b.destinationAirport}}</td>
+            
+        </tr>
+    </table>
+</div>
+
+
